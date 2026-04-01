@@ -1,0 +1,17 @@
+{
+  "name": "HiveLaunch",
+  "short_name": "HiveLaunch",
+  "description": "AI Campaign Studio powered by Pollinations.ai",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#08110d",
+  "theme_color": "#08110d",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

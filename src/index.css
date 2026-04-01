@@ -1,0 +1,90 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Manrope', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Space Grotesk', ui-sans-serif, system-ui, sans-serif;
+  --color-ink: #e7f4eb;
+  --color-ink-soft: #9bb5a4;
+  --color-canvas: #08110d;
+  --color-canvas-deep: #040a07;
+  --color-panel: rgba(12, 25, 18, 0.78);
+  --color-panel-strong: rgba(16, 34, 24, 0.92);
+  --color-line: rgba(128, 184, 136, 0.18);
+  --color-pollen: #d7f171;
+  --color-leaf: #66d08c;
+  --color-mint: #8ff3c2;
+  --color-warm: #f7cf79;
+  --color-danger: #ff8a7a;
+}
+
+:root {
+  color: var(--color-ink);
+  background:
+    radial-gradient(circle at top left, rgba(102, 208, 140, 0.18), transparent 28%),
+    radial-gradient(circle at top right, rgba(215, 241, 113, 0.12), transparent 24%),
+    linear-gradient(180deg, #08110d 0%, #040a07 100%);
+  font-family: var(--font-sans);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background: transparent;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+::selection {
+  background: rgba(143, 243, 194, 0.25);
+  color: #f8fff9;
+}
+
+.glass-panel {
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #f4ffe4 0%, #c8f675 36%, #78e0a1 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.hero-grid {
+  background-image:
+    linear-gradient(rgba(112, 169, 119, 0.09) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(112, 169, 119, 0.09) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.scroll-shadow {
+  mask-image: linear-gradient(
+    180deg,
+    transparent 0%,
+    black 10%,
+    black 92%,
+    transparent 100%
+  );
+}

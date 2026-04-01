@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none">
+  <rect width="1200" height="630" fill="#08110d" />
+  <circle cx="180" cy="120" r="220" fill="#D7F171" opacity=".1" />
+  <circle cx="1030" cy="120" r="180" fill="#66D08C" opacity=".12" />
+  <circle cx="960" cy="520" r="220" fill="#8FF3C2" opacity=".08" />
+  <g opacity=".18" stroke="#D7F171">
+    <path d="M0 130h1200M0 250h1200M0 370h1200M0 490h1200" />
+    <path d="M150 0v630M330 0v630M510 0v630M690 0v630M870 0v630M1050 0v630" />
+  </g>
+  <rect x="70" y="70" width="1060" height="490" rx="40" fill="url(#b)" stroke="rgba(255,255,255,0.14)" />
+  <path d="M164 162 255 214v105.4L164 372l-91-52.6V214l91-52Zm0 23.7-69.5 40v80.6l69.5 40.9 69.5-40.9v-80.6l-69.5-40Z" fill="url(#a)" />
+  <path d="m164 225.8-49 28.2v56.6l49 28.4 49-28.4V254l-49-28.2Z" fill="#08110d" />
+  <text x="320" y="240" fill="#D7F171" font-family="Space Grotesk, sans-serif" font-size="34" letter-spacing="8">HIVELAUNCH</text>
+  <text x="320" y="332" fill="#F3FBE4" font-family="Space Grotesk, sans-serif" font-size="82" font-weight="700">AI Campaign Studio</text>
+  <text x="320" y="404" fill="#E7F4EB" font-family="Manrope, sans-serif" font-size="32">Turn one product brief into a ready-to-launch campaign kit.</text>
+  <text x="320" y="474" fill="#A4B8A8" font-family="Manrope, sans-serif" font-size="24">Powered by pollinations.ai for structured copy, visuals, and optional voiceover.</text>
+  <defs>
+    <linearGradient id="a" x1="68" y1="170" x2="264" y2="354" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#D7F171" />
+      <stop offset=".52" stop-color="#7FE39F" />
+      <stop offset="1" stop-color="#315743" />
+    </linearGradient>
+    <linearGradient id="b" x1="150" y1="60" x2="1020" y2="560" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0C1812" />
+      <stop offset="1" stop-color="#07100C" />
+    </linearGradient>
+  </defs>
+</svg>
