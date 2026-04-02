@@ -2,7 +2,7 @@
 
 Powered by [Pollinations.ai](https://pollinations.ai), HiveLaunch is a BYOP AI campaign studio that turns one product or service brief into a ready-to-launch mini campaign kit.
 
-Live app: [https://skill-deploy-fp74enolez-codex-agent-deploys.vercel.app](https://skill-deploy-fp74enolez-codex-agent-deploys.vercel.app)
+Live app: [https://skill-deploy-stvjb2min5-codex-agent-deploys.vercel.app](https://skill-deploy-stvjb2min5-codex-agent-deploys.vercel.app)
 
 ![HiveLaunch preview](./public/og-card.svg)
 

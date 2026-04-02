@@ -60,6 +60,18 @@ function makeSessionName(plan: CampaignPlan) {
   return `${plan.brief.productName} - ${plan.brief.platform}`;
 }
 
+function isInvalidPollinationsKeyError(error: unknown) {
+  const message = toErrorMessage(error).toLowerCase();
+
+  return (
+    message.includes('api key required') ||
+    message.includes('authentication required') ||
+    message.includes('unauthorized') ||
+    message.includes('invalid api key') ||
+    message.includes('invalid key')
+  );
+}
+
 function createSession(plan: CampaignPlan, settings: StudioSettings): CampaignSession {
   return {
     id: createSessionId(),
@@ -204,9 +216,27 @@ export function App() {
       if (inspectionResult.status === 'fulfilled') {
         setKeyState({ status: 'ready', inspection: inspectionResult.value });
       } else {
+        const errorMessage = toErrorMessage(inspectionResult.reason);
+
+        if (isInvalidPollinationsKeyError(inspectionResult.reason)) {
+          setConnection(null);
+
+          if (connection.persisted) {
+            setSavedApiKey(undefined);
+          }
+
+          setBanner({
+            tone: 'error',
+            message: connection.persisted
+              ? 'The saved Pollinations key is no longer valid and was removed. Connect again with a current key.'
+              : 'That Pollinations key is no longer valid. Connect again with a current key.',
+          });
+          return;
+        }
+
         setKeyState({
           status: 'error',
-          error: toErrorMessage(inspectionResult.reason),
+          error: errorMessage,
         });
       }
     }
@@ -216,7 +246,7 @@ export function App() {
     return () => {
       ignore = true;
     };
-  }, [connection?.apiKey]);
+  }, [connection?.apiKey, connection?.persisted]);
 
   useEffect(() => {
     setSettings((current) => {

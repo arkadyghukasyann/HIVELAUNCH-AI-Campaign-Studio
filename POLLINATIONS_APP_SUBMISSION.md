@@ -10,7 +10,7 @@ App Language:
 English
 
 Live URL:
-https://skill-deploy-fp74enolez-codex-agent-deploys.vercel.app
+https://skill-deploy-stvjb2min5-codex-agent-deploys.vercel.app
 
 Open Source Repo:
 https://github.com/arkadyghukasyann/HIVELAUNCH-AI-Campaign-Studio
