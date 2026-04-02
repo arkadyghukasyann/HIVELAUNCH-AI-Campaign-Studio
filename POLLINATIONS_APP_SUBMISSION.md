@@ -10,13 +10,13 @@ App Language:
 English
 
 Live URL:
-[DEPLOYED_PUBLIC_URL]
+https://skill-deploy-fp74enolez-codex-agent-deploys.vercel.app
 
 Open Source Repo:
-[GITHUB_REPO_URL]
+https://github.com/arkadyghukasyann/HIVELAUNCH-AI-Campaign-Studio
 
 Contact:
-[CONTACT_DETAILS]
+a.g.game@outlook.com
 
 ## What HiveLaunch Does
 
